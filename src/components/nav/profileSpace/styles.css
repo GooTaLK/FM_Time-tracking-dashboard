@@ -1,0 +1,29 @@
+.ProfileSpace {
+  display: flex;
+  width: 325px;
+  height: 134px;
+  padding: 30px;
+  background-color: var(--blue);
+  border: 1px solid var(--dark-blue);
+}
+
+.ProfileSpace-picture {
+  width: 70px;
+  height: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.ProfileSpace-name {
+  margin-left: 15px;
+  padding-block: 15px;
+  font-size: 23.5px;
+  font-weight: 300;
+}
+
+.ProfileSpace-name-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}
