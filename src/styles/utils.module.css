@@ -1,0 +1,7 @@
+.rounded {
+  border-radius: 10px;
+}
+
+.blurredText {
+  color: var(--pale-blue);
+}
