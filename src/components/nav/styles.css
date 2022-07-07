@@ -1,0 +1,24 @@
+.NavWrapper {
+  background-color: var(--dark-blue);
+}
+
+.NavWrapper ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Nav-links {
+  color: var(--desaturated-blue);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.Nav-links.current,
+.Nav-links:hover {
+  color: white;
+}
