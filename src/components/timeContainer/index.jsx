@@ -1,4 +1,3 @@
-import React, { useRef } from 'react'
 import './styles.css'
 import TimeCard from '../timeCard'
 import { extraTimeData } from '../../../extraTimeData'
@@ -7,7 +6,7 @@ export default function TimeContainer({ type, timeData }) {
   const allowedTypes = ['daily', 'weekly', 'monthly']
   if (!allowedTypes.includes(type)) return null
 
-  const typeSingleRef = useRef(type === 'daily' ? 'day' : type.slice(2))
+  const typeSingleRef = type === 'daily' ? 'day' : type.slice(0, -2)
 
   return (
     <main className='TimeContainer'>
@@ -21,7 +20,7 @@ export default function TimeContainer({ type, timeData }) {
             backgroundColor={backgroundColor}
             topImage={topImage}
             time={`${current}hrs`}
-            prevTime={`Last ${typeSingleRef.current} - ${previous}hrs`}
+            prevTime={`Last ${typeSingleRef} - ${previous}hrs`}
           />
         )
       })}
