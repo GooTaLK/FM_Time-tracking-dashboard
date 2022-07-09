@@ -1,4 +1,5 @@
 .NavWrapper {
+  width: 325px;
   background-color: var(--dark-blue);
 }
 
@@ -21,4 +22,26 @@
 .Nav-links.current,
 .Nav-links:hover {
   color: white;
+}
+
+@media (min-width: 662px) {
+  .NavWrapper {
+    position: sticky;
+    top: 40px;
+    width: 260px;
+    height: 520px;
+  }
+
+  .Nav {
+    height: calc(100% - 360px);
+  }
+
+  .NavWrapper ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 4px;
+    padding: 30px;
+  }
 }

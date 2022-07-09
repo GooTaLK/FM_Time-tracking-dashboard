@@ -1,6 +1,6 @@
 .ProfileSpace {
   display: flex;
-  width: 325px;
+  width: 100%;
   height: 134px;
   padding: 30px;
   background-color: var(--blue);
@@ -26,4 +26,23 @@
   display: block;
   font-size: 15px;
   font-weight: 400;
+}
+
+@media (min-width: 662px) {
+  .ProfileSpace {
+    flex-direction: column;
+    height: 360px;
+  }
+
+  .ProfileSpace-picture {
+    width: 84px;
+    height: 84px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+  }
+
+  .ProfileSpace-name {
+    margin-left: 4px;
+    font-size: 40px;
+  }
 }
