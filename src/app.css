@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90vw;
+  max-width: 1120px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  margin-inline: 24px;
+}
