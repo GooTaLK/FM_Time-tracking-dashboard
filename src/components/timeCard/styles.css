@@ -1,0 +1,81 @@
+.TimeCard {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.TimeCard-topImage {
+  position: absolute;
+  right: 20px;
+  top: -10px;
+}
+
+.TimeCard-data {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 25px;
+  background-color: var(--dark-blue);
+}
+
+.TimeCard:hover .TimeCard-data {
+  background-color: hsl(236, 41%, 34%);
+}
+
+.TimeCard-data-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TimeCard-data-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.TimeCard-data-menuIcon {
+  display: inline-block;
+  height: 20px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.ellipsisIcon {
+  display: inline-block;
+  width: 21px;
+  aspect-ratio: 21/5;
+  mask-image: url(../../../assets/svg/icon-ellipsis.svg);
+  mask-repeat: no-repeat;
+  background-color: var(--pale-blue);
+}
+
+.TimeCard-data-menuIcon:hover .ellipsisIcon {
+  background-color: white;
+}
+
+.TimeCard-data-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TimeCard-data-time {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+@media (min-width: 1189px) {
+  .TimeCard-data-content {
+    flex-wrap: wrap;
+  }
+
+  .TimeCard-data-time {
+    width: 100%;
+    margin-block: 10px 5px;
+    font-size: 56px;
+  }
+}
