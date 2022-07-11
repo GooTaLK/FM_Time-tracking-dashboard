@@ -1,6 +1,7 @@
 .TimeContainer {
   flex-grow: 1;
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   gap: 20px;
 }
